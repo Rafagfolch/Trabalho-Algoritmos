@@ -12,19 +12,19 @@
 //Comparações são incrementadas sempre que duas posições do vetor têm seus valores comparados: if (vet[i] > vet[j]).
 //Movimentações são incrementadas sempre que uma posição do vetor tem seu valor alterado: vet[i] = x.
 typedef struct metricas met;
-/*struct metricas
+struct metricas
 {
     unsigned long long comparacoes;
     unsigned long long movimentacoes;
-};*/
+};
 
 //Tipo de dado criado para simular requisições de usuários
 //As requisições são definidas pelo id do usuário e pelo tempo de chegada
 typedef struct request r;
-/*struct request {
+struct request {
     int user_id;   // chave de ordenação (prioridade implícita)
     int chegada;   // ordem de chegada (timestamp lógico)
-};*/
+};
 
 //************ALGORITMOS DE ORDENAÇÃO **************//
 
