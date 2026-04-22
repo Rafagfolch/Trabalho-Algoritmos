@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(${CMAKE_SOURCE_DIR})
 
-add_executable(exe main.c)
+add_executable(exe main.c benchmarking.c)
 target_link_libraries(exe ${CMAKE_SOURCE_DIR}/lib/libordenacao18.a)
 
 # pra rodar tem q ser 
