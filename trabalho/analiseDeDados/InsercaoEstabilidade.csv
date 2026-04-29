@@ -1,0 +1,5 @@
+CENARIO;1000;5000;10000
+Aleatorio;Sim;Sim;Sim
+Crescente;Sim;Sim;Sim
+Decrescente;Sim;Sim;Sim
+Quase_Ordenado;Nao;Nao;Nao

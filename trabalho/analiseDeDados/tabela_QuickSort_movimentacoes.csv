@@ -1,4 +1,0 @@
-Teste;Tamanho Entrada;Aleatório (média de 30 repetições);Ordem crescente;Ordem decrescente;Quase ordenado (média de 30 repetições)
-1;1000,0;9899,0;1998,0;159808,0;7080,0
-2;5000,0;67926,0;9998,0;3843032,0;47137,0
-3;10000,0;145825,0;19998,0;15054666,0;109640,0
