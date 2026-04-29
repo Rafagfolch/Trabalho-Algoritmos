@@ -120,7 +120,7 @@ void executar_teste(int id_algo, const char* nome_algo, int tam, int cenario) {
 }
 
 void iniciar_testes_principais() {
-    int tamanhos[] = {1000, 5000, 10000, 15000;
+    int tamanhos[] = {1000, 5000, 10000, 15000};
     int num_tamanhos = sizeof(tamanhos) / sizeof(tamanhos[0]); //calcula a quantidade de elementos no array. Garante que o loop se ajuste se novos tamanhos forem adicionados
 
     printf("ALGORITMO;CENÁRIO;TAMANHO;TEMPO MÉDIO EM MS;MÉDIA DE COMPARAÇÕES;MÉDIA DE MOVIMENTAÇÕES;ESTABILIDADE\n");
