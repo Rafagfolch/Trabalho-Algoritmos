@@ -3,10 +3,10 @@
 
 #include "ordenacao.h"
 
-// Orquestra a bateria principal de testes para O(n^2) e O(n log n)
+// Realiza os testes para os algoritmos bolha inteligente, seleção, inserção, mergeSort, quickSort, shellSort, heapSort
 void iniciar_testes_principais();
 
-// Orquestra a bateria experimental do BozoSort com limite de 30s
+// Realiza o teste do BozoSort com limite de 30s
 void iniciar_testes_bozo();
 
 #endif // BENCHMARKING_H
