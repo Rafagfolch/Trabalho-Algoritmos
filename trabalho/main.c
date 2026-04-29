@@ -2,11 +2,11 @@
 #include "benchmarking.h"
 
 int main() {
-    printf("Inicializando auditoria de algoritmos...\n\n");
+    printf("Inicializando testes\n\n");
 
     iniciar_testes_principais();
     iniciar_testes_bozo();
 
-    printf("\nColeta de metricas finalizada.\n");
+    printf("\nColeta de métricas finalizada\n");
     return 0;
 }
