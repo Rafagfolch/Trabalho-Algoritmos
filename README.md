@@ -1,13 +1,15 @@
 # Trabalho - Algoritmos e Estrutura de Dados II
-# Arquitetura do benchmarking
+
+## Arquitetura do benchmarking
+
+```text
 .
-├── benchmarking/
-│   ├── main.c              # Orquestrador do sistema
-│   ├── benchmarking.c      # Implementação das métricas e threads
-│   ├── benchmarking.h      # Protótipos das funções de teste
-│   ├── ordenacao.h         # Definições fornecidas 
-│   └── lib/                # Bibliotecas estáticas de ordenação
-└── README.md
+└── benchmarking/
+    ├── main.c              # Orquestrador do sistema
+    ├── benchmarking.c      # Implementação das métricas e threads
+    ├── benchmarking.h      # Protótipos das funções de teste
+    ├── ordenacao.h         # Definições fornecidas (Profª Vanessa)
+    └── lib/                # Bibliotecas estáticas de ordenação
 
 ### Como rodar (via Wine)
 Para compilar utilizando o cross-compiler para Windows e gerar o arquivo de resultados:
