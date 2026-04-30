@@ -1,5 +1,18 @@
 # Trabalho - Algoritmos e Estrutura de Dados II
 
+## Complexidade dos algoritmos
+
+| **Algoritmo** | **Melhor caso** | **Caso médio** | **Pior caso** |
+|---|---|---|---|
+| **bolhainteligente** | O(n) | O(n²) | O(n²) |
+| **selecao** | O(n²) | O(n²) | O(n²) |
+| **insercao** | O(n) | O(n²) | O(n²) |
+| **mergesort** | O(n log n) | O(n log n) | O(n log n) |
+| **quicksort** | O(n log n) | O(n log n) | O(n²) |
+| **shellsort** | O(n log n) | O(n log n) | O(n²) |
+| **heapsort** | O(n log n) | O(n log n) | O(n log n) |
+| **bozosort** | O(n) | O(n × n!) | O(∞) |
+
 ## Arquitetura do benchmarking
 
 ```text
