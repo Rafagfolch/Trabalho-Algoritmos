@@ -81,6 +81,10 @@ void executar_teste(int id_algo, const char* nome_algo, int tam, int cenario) {
         
         met *metricas = NULL; // para receber os dados dos algoritmos Bolha, Inserção, Seleção, shellSort, heapSort
 
+        for (int j = 0; j < tam; j++) {
+            vetor[j].chegada = j;
+        }
+        
         gettimeofday(&inicio, NULL); // inicia o cronômetro
 
        switch (id_algo) {
