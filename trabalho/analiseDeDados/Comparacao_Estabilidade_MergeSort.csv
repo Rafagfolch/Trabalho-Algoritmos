@@ -1,0 +1,17 @@
+CENARIO;TAMANHO;MergeSort;mergeSortCorrigido
+Aleatorio;1000;Nao;Sim
+Aleatorio;5000;Nao;Sim
+Aleatorio;10000;Nao;Sim
+Aleatorio;15000;Nao;Sim
+Crescente;1000;Nao;Sim
+Crescente;5000;Nao;Sim
+Crescente;10000;Nao;Sim
+Crescente;15000;Nao;Sim
+Decrescente;1000;Nao;Sim
+Decrescente;5000;Nao;Sim
+Decrescente;10000;Nao;Sim
+Decrescente;15000;Nao;Sim
+Quase_Ordenado;1000;Nao;Sim
+Quase_Ordenado;5000;Nao;Sim
+Quase_Ordenado;10000;Nao;Sim
+Quase_Ordenado;15000;Nao;Sim

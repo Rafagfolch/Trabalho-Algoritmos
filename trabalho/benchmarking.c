@@ -4,6 +4,7 @@
 #include <sys/time.h>
 #include <windows.h> // Substitui o <signal.h> para lidar com o timeout no MinGW
 #include "benchmarking.h"
+#include "corrigido.h"
 
 // Retorna o tempo decorrido em milissegundos
 double calcula_tempo_ms(struct timeval inicio, struct timeval fim) {
@@ -74,11 +75,15 @@ void executar_teste(int id_algo, const char* nome_algo, int tam, int cenario) {
             vetor = geraDecrescente(tam, seed);
         }
 
+        for (int j = 0; j < tam; j++) {
+            vetor[j].chegada = j;
+        }
+        
         met *metricas = NULL; // para receber os dados dos algoritmos Bolha, Inserção, Seleção, shellSort, heapSort
 
         gettimeofday(&inicio, NULL); // inicia o cronômetro
 
-        switch (id_algo) {
+       switch (id_algo) {
             case 1:
                 metricas = bolhaInteligente(vetor, tam);
                 break;
@@ -101,6 +106,10 @@ void executar_teste(int id_algo, const char* nome_algo, int tam, int cenario) {
                 break;
             case 7:
                 metricas = heapSort(vetor, tam);
+                break;
+            case 8:
+                metricas = alocaMetricas();
+                mergeSortCorrigido(vetor, 0, tam - 1, metricas);
                 break;
         }
 
@@ -126,7 +135,7 @@ void iniciar_testes_principais() {
     printf("ALGORITMO;CENÁRIO;TAMANHO;TEMPO MÉDIO EM MS;MÉDIA DE COMPARAÇÕES;MÉDIA DE MOVIMENTAÇÕES;ESTABILIDADE\n");
 
     // Loop externo por Algoritmo (Isolamento de resultados)
-    for (int algo = 1; algo <= 7; algo++) {
+    for (int algo = 1; algo <= 8; algo++) {
         const char* nome;
         if(algo == 1) nome = "BolhaInteligente";
         else if(algo == 2) nome = "Selecao";
@@ -134,7 +143,8 @@ void iniciar_testes_principais() {
         else if(algo == 4) nome = "MergeSort";
         else if(algo == 5) nome = "QuickSort";
         else if(algo == 6) nome = "ShellSort";
-        else nome = "HeapSort";
+        else if(algo == 7) nome = "HeapSort";
+        else               nome = "mergeSortCorrigido";
 
         // Loop intermediário por Cenário
         for (int cenario = 0; cenario < 4; cenario++) {
