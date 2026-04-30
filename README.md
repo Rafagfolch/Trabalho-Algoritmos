@@ -2,16 +2,16 @@
 
 ## Complexidade dos algoritmos
 
-| **Algoritmo** | **Melhor caso** | **Caso médio** | **Pior caso** |
+| **Algoritmo** | **Melhor caso** | **Caso médio** | **Pior caso** | **Estabilidade**
 |---|---|---|---|
-| **bolhainteligente** | O(n) | O(n²) | O(n²) |
-| **selecao** | O(n²) | O(n²) | O(n²) |
-| **insercao** | O(n) | O(n²) | O(n²) |
-| **mergesort** | O(n log n) | O(n log n) | O(n log n) |
-| **quicksort** | O(n log n) | O(n log n) | O(n²) |
-| **shellsort** | O(n log n) | O(n log n) | O(n²) |
-| **heapsort** | O(n log n) | O(n log n) | O(n log n) |
-| **bozosort** | O(n) | O(n × n!) | O(∞) |
+| **bolhainteligente** | O(n) | O(n²) | O(n²) | Estável
+| **selecao** | O(n²) | O(n²) | O(n²) | Instável
+| **insercao** | O(n) | O(n²) | O(n²) | Estável
+| **mergesort** | O(n log n) | O(n log n) | O(n log n) | Estável
+| **quicksort** | O(n log n) | O(n log n) | O(n²) | Instável
+| **shellsort** | O(n log n) | O(n log n) | O(n²) | Instável
+| **heapsort** | O(n log n) | O(n log n) | O(n log n) | Instável
+| **bozosort** | O(n) | O(n × n!) | O(∞) | Instável
 
 ## Arquitetura do benchmarking
 
