@@ -15,14 +15,20 @@
 
 ## Arquitetura do benchmarking
 
-```text
+
+```
 .
 └── benchmarking/
-    ├── main.c              # Orquestrador do sistema
-    ├── benchmarking.c      # Implementação das métricas e threads
-    ├── benchmarking.h      # Protótipos das funções de teste
-    ├── ordenacao.h         # Definições fornecidas 
-    └── lib/                # Bibliotecas estáticas de ordenação
+    ├── main.c                  # Orquestrador do sistema
+    ├── benchmarking.c          # Implementação das métricas e threads
+    ├── benchmarking.h          # Protótipos das funções de teste
+    ├── corrigido.c             # Implementação do mergeSortCorrigido
+    ├── corrigido.h             # Protótipos das funções corrigidas
+    ├── ordenacao.h             # Definições fornecidas
+    ├── lib/                    # Bibliotecas estáticas de ordenação
+    └── analiseDeDados/
+        ├── analise.py          # Script de geração de gráficos e CSVs
+        └── dados.csv           # Dados de saída do benchmarking
 ```
 
 ### Como rodar (via Wine)
