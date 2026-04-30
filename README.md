@@ -3,7 +3,7 @@
 ## Complexidade dos algoritmos
 
 | **Algoritmo** | **Melhor caso** | **Caso médio** | **Pior caso** | **Estabilidade**
-|---|---|---|---|
+|---|---|---|---|---|
 | **bolhainteligente** | O(n) | O(n²) | O(n²) | Estável
 | **selecao** | O(n²) | O(n²) | O(n²) | Instável
 | **insercao** | O(n) | O(n²) | O(n²) | Estável
