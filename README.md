@@ -8,7 +8,7 @@
     ├── main.c              # Orquestrador do sistema
     ├── benchmarking.c      # Implementação das métricas e threads
     ├── benchmarking.h      # Protótipos das funções de teste
-    ├── ordenacao.h         # Definições fornecidas (Profª Vanessa)
+    ├── ordenacao.h         # Definições fornecidas 
     └── lib/                # Bibliotecas estáticas de ordenação
 ```
 
