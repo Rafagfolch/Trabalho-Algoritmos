@@ -15,7 +15,6 @@
 
 ## Arquitetura do benchmarking
 
-
 ```
 .
 └── benchmarking/
@@ -25,7 +24,9 @@
     ├── corrigido.c             # Implementação do mergeSortCorrigido
     ├── corrigido.h             # Protótipos das funções corrigidas
     ├── ordenacao.h             # Definições fornecidas
-    ├── lib/                    # Bibliotecas estáticas de ordenação
+    ├── CMakeLists.txt          # Arquivo de configuração
+    ├── lib/                    
+    │   └── libordenacao18.a    # Biblioteca estática dos algoritmos
     └── analiseDeDados/
         ├── analise.py          # Script de geração de gráficos e CSVs
         └── dados.csv           # Dados de saída do benchmarking
