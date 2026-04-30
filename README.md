@@ -10,6 +10,7 @@
     ├── benchmarking.h      # Protótipos das funções de teste
     ├── ordenacao.h         # Definições fornecidas (Profª Vanessa)
     └── lib/                # Bibliotecas estáticas de ordenação
+```
 
 ### Como rodar (via Wine)
 Para compilar utilizando o cross-compiler para Windows e gerar o arquivo de resultados:
