@@ -1,5 +1,5 @@
-CENARIO;1000;5000;10000
-Aleatorio;0.0;1.3167;1.5695
-Crescente;0.0;1.555;0.0
-Decrescente;0.0;1.429;0.0
-Quase_Ordenado;0.0;0.9652;3.7773
+CENARIO;1000;5000;10000;15000
+Aleatorio;0.2327;1.2954;2.862;4.4914
+Crescente;0.163;1.126;2.088;2.967
+Decrescente;0.158;0.862;1.822;4.311
+Quase_Ordenado;0.2073;1.104;2.137;3.2068
